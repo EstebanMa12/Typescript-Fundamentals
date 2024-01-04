@@ -19,4 +19,12 @@
   myString = undefined
   console.log(myString);
 
+  function hi(name: string | null){
+    let hello = 'Hola ';
+    hello += name?.toLowerCase() || 'nobody';
+    console.log(hello);
+  }
+  hi('Luis')
+  hi(null)
+
 })()
